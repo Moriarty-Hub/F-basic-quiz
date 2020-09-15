@@ -1,0 +1,28 @@
+@import "variables";
+
+header {
+  border-bottom: 5px solid $body-bg;
+
+  .avatar {
+    text-align: center;
+
+    .image {
+      margin-top: -($image-size / 2);
+      height: $image-size;
+      width: $image-size;
+      border-radius: 50%;
+    }
+  }
+
+  .introduce {
+    text-align: center;
+
+    .hello {
+      font-size: 30px;
+    }
+
+    .name {
+      font-size: 25px;
+    }
+  }
+}

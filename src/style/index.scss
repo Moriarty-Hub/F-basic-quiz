@@ -1,3 +1,15 @@
 @import "variables";
 @import "mixins";
 @import "reboot";
+@import "header";
+
+html {
+  background: $body-bg;
+}
+
+body {
+  background: white;
+  width: 90%;
+  margin: 9% auto 2%;
+  padding: 0 2% 3%;
+}
