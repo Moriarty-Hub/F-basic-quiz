@@ -3,14 +3,11 @@ function getUserIdFromURL() {
   return window.location.href.split("/")[indexOfUserId];
 }
 
-function getUserInfoFromServer() {
+async function getUserInfoFromServer() {
   const urlPrefixOfGettingUser = "http://localhost:8080/users/";
   const userId = getUserIdFromURL();
-  fetch(urlPrefixOfGettingUser + userId)
-    .then((response) => response.json())
-    .then((user) => {
-      return user;
-    });
+  const response = await fetch(urlPrefixOfGettingUser + userId);
+  return response.json();
 }
 
 export { getUserIdFromURL, getUserInfoFromServer };

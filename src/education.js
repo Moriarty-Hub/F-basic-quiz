@@ -1,17 +1,14 @@
 import { getUserIdFromURL } from "./user";
 
-function getEducationOfUserFromServer() {
+export async function getEducationOfUserFromServer() {
   const urlPrefixOfGettingEducation = "http://localhost:8080/users/";
   const urlSuffixOfGettingEducation = "/educations";
-  fetch(
+  const response = await fetch(
     urlPrefixOfGettingEducation +
       getUserIdFromURL() +
       urlSuffixOfGettingEducation
-  )
-    .then((response) => response.json())
-    .then((educationList) => {
-      return educationList;
-    });
+  );
+  return response.json();
 }
 
 export default getEducationOfUserFromServer();
