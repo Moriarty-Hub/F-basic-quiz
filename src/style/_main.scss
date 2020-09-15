@@ -1,0 +1,29 @@
+@import "variables";
+
+.main {
+  .about-me > .title,
+  .education > .title {
+    font-size: 25px;
+    color: $primary-color;
+  }
+
+  .about-me > .description > .text {
+    font-size: 20px;
+  }
+
+  .education {
+    .record {
+      display: flex;
+
+      .year {
+        width: 10%;
+        font-size: 20px;
+      }
+
+      .experience {
+        width: 90%;
+        font-size: 20px;
+      }
+    }
+  }
+}
