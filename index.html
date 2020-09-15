@@ -1,13 +1,44 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="zh-Hans">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport"
-        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Resume</title>
-</head>
-<body>
-  <script src="src/app.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Resume</title>
+  </head>
+  <body>
+    <header>
+      <section class="avatar" id="avatar"><!-- insert avatar here --></section>
+      <section class="introduce">
+        <h2>HELLO,</h2>
+        <h3 id="name">MY NAME IS</h3>
+        <!-- insert name here -->
+        <h3>AND THIS IS MY RESUME/CV</h3>
+      </section>
+    </header>
+    <main>
+      <section class="about-me">
+        <h3 class="title">ABOUT ME</h3>
+        <section class="description" id="description">
+          <!-- insert description here -->
+        </section>
+      </section>
+      <section class="education">
+        <h3 class="title">EDUCATION</h3>
+        <section class="record">
+          <section class="year"><!-- insert year here --></section>
+          <section class="experience">
+            <h5 class="title"><!-- insert education title here --></h5>
+            <p class="description">
+              <!-- insert education description here -->
+            </p>
+          </section>
+        </section>
+      </section>
+    </main>
+    <script src="src/app.js"></script>
+  </body>
 </html>
