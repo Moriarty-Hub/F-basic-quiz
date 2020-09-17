@@ -4,7 +4,9 @@ import { getEducationOfUserFromServer } from "./education";
 
 async function addUserAvatar() {
   const user = await getUserInfoFromServer();
+  // TODO feedback: 不建议disable eslint，需要想办法解决
   // eslint-disable-next-line no-undef
+  // TODO feedback: 建议找到img，然后添加src
   $("#avatar").html(`<img 
         src="${user.avatar}" 
         alt="avatar" 
@@ -27,6 +29,8 @@ async function addEducationList() {
   const educationList = await getEducationOfUserFromServer();
   educationList.forEach((education) => {
     // eslint-disable-next-line no-undef
+    // TODO feedback: 在for循环中，每次都要操作DOM，影响性能，不推荐这样做
+    // TODO feedback: record用ul li更符合语义
     $("#education").append(`
         <section class="record">
           <section class="year">

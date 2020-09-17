@@ -3,7 +3,7 @@
 @import "reboot";
 @import "header";
 @import "main";
-
+// TODO feedback: 全局样式建议放在reboot.scss中
 html {
   background: $body-bg;
 }
